@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 845" width="1200" height="845" role="img" aria-label="마스터–슬레이브 SPI 통합 FSM">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#64748b"/></marker></defs>
+<rect width="1200" height="845" fill="#f1f5f9"/>
+<g font-family="Malgun Gothic, sans-serif" fill="#0f172a">
+<text x="40" y="51" font-size="32" font-weight="700" fill="#0f172a">마스터–슬레이브 SPI 통합 FSM</text>
+<text x="40" y="84" font-size="17" font-weight="400" fill="#0f172a">Mode 0 · SCK 유휴 Low · MSB 우선 · CS_n Low 동안 주소 8비트 + 응답 8비트</text>
+<rect x="40" y="107" width="546" height="37" rx="6" fill="#1e40af"/>
+<text x="56" y="132" font-size="18" font-weight="700" fill="white">MASTER BASYS3</text>
+<rect x="614" y="107" width="546" height="37" rx="6" fill="#0f766e"/>
+<text x="630" y="132" font-size="18" font-weight="700" fill="white">SLAVE BASYS3</text>
+<text x="40" y="174" font-size="16" font-weight="700" fill="#0f172a">1. 대기 / 선택</text>
+<rect x="40" y="182" width="546" height="58" rx="6" fill="#dbeafe"/>
+<text x="56" y="205" font-size="17" font-weight="700" fill="#1e40af">IDLE → SELECT</text>
+<text x="56" y="228" font-size="16" font-weight="400" fill="#0f172a">CS_n을 Low로 내리고 MOSI에 주소 bit 7 준비</text>
+<path d="M313 240v38" fill="none" stroke="#64748b" marker-end="url(#arrow)"/>
+<rect x="614" y="182" width="546" height="58" rx="6" fill="#ccfbf1"/>
+<text x="630" y="205" font-size="17" font-weight="700" fill="#115e59">WAIT_SELECT → RX_INDEX</text>
+<text x="630" y="228" font-size="16" font-weight="400" fill="#0f172a">CS_n 하강에서 수신 카운터 초기화</text>
+<path d="M887 240v38" fill="none" stroke="#64748b" marker-end="url(#arrow)"/>
+<text x="40" y="280" font-size="16" font-weight="700" fill="#0f172a">2. 주소 전송 · 상승 1–8</text>
+<rect x="40" y="288" width="546" height="58" rx="6" fill="#dbeafe"/>
+<text x="56" y="311" font-size="17" font-weight="700" fill="#1e40af">SEND_INDEX</text>
+<text x="56" y="334" font-size="16" font-weight="400" fill="#0f172a">MOSI로 주소 8비트 전송, MSB 우선</text>
+<path d="M313 346v38" fill="none" stroke="#64748b" marker-end="url(#arrow)"/>
+<rect x="614" y="288" width="546" height="58" rx="6" fill="#ccfbf1"/>
+<text x="630" y="311" font-size="17" font-weight="700" fill="#115e59">RX_INDEX</text>
+<text x="630" y="334" font-size="16" font-weight="400" fill="#0f172a">SCK 상승마다 MOSI 샘플링</text>
+<path d="M887 346v38" fill="none" stroke="#64748b" marker-end="url(#arrow)"/>
+<path d="M588 317H610" stroke="#64748b" marker-end="url(#arrow)"/>
+<text x="40" y="386" font-size="16" font-weight="700" fill="#0f172a">3. 응답 준비 · 상승 8 → 하강 8</text>
+<rect x="40" y="394" width="546" height="58" rx="6" fill="#dbeafe"/>
+<text x="56" y="417" font-size="17" font-weight="700" fill="#1e40af">TURNAROUND</text>
+<text x="56" y="440" font-size="16" font-weight="400" fill="#0f172a">CS_n 유지, MOSI에 더미 바이트 0x00 준비</text>
+<path d="M313 452v38" fill="none" stroke="#64748b" marker-end="url(#arrow)"/>
+<rect x="614" y="394" width="546" height="58" rx="6" fill="#ccfbf1"/>
+<text x="630" y="417" font-size="17" font-weight="700" fill="#115e59">LOAD_DATA → TX_DATA</text>
+<text x="630" y="440" font-size="16" font-weight="400" fill="#0f172a">상승 8에서 주소 확정, 하강 8에서 MISO bit 7 출력</text>
+<path d="M887 452v38" fill="none" stroke="#64748b" marker-end="url(#arrow)"/>
+<text x="40" y="492" font-size="16" font-weight="700" fill="#0f172a">4. 응답 수신 · 상승 9–16</text>
+<rect x="40" y="500" width="546" height="58" rx="6" fill="#dbeafe"/>
+<text x="56" y="523" font-size="17" font-weight="700" fill="#1e40af">READ_DATA</text>
+<text x="56" y="546" font-size="16" font-weight="400" fill="#0f172a">상승 9–16에서 MISO 샘플링</text>
+<path d="M313 558v38" fill="none" stroke="#64748b" marker-end="url(#arrow)"/>
+<rect x="614" y="500" width="546" height="58" rx="6" fill="#ccfbf1"/>
+<text x="630" y="523" font-size="17" font-weight="700" fill="#115e59">TX_DATA → WAIT_RELEASE</text>
+<text x="630" y="546" font-size="16" font-weight="400" fill="#0f172a">하강 9–15에서 MISO bit 6–0 순서대로 출력</text>
+<path d="M887 558v38" fill="none" stroke="#64748b" marker-end="url(#arrow)"/>
+<path d="M612 529H590" stroke="#64748b" marker-end="url(#arrow)"/>
+<text x="40" y="598" font-size="16" font-weight="700" fill="#0f172a">5. 종료 · 하강 16 이후</text>
+<rect x="40" y="606" width="546" height="58" rx="6" fill="#dbeafe"/>
+<text x="56" y="629" font-size="17" font-weight="700" fill="#1e40af">DESELECT → DONE</text>
+<text x="56" y="652" font-size="16" font-weight="400" fill="#0f172a">SCK Low에서 CS 홀드 후 CS_n High, rx_byte / done 전달</text>
+<rect x="614" y="606" width="546" height="58" rx="6" fill="#ccfbf1"/>
+<text x="630" y="629" font-size="17" font-weight="700" fill="#115e59">WAIT_RELEASE → WAIT_SELECT</text>
+<text x="630" y="652" font-size="16" font-weight="400" fill="#0f172a">CS_n 상승에서 MISO를 Hi-Z로 전환</text>
+<rect x="40" y="686" width="1120" height="130" rx="8" fill="white"/>
+<text x="56" y="713" font-size="17" font-weight="700" fill="#0f172a">레지스터 및 예외 처리</text>
+<text x="56" y="741" font-size="16" font-weight="400" fill="#0f172a">0x00 온도 · 0x01 습도 · 0x02 거리 LSB · 0x03 거리 MSB · 그 외 주소는 0x00 응답</text>
+<text x="56" y="767" font-size="16" font-weight="400" fill="#0f172a">마스터 타임아웃 → SCK Low, CS_n High, error 보고. done은 16클록 완료를 의미.</text>
+<text x="56" y="793" font-size="16" font-weight="400" fill="#0f172a">프레임 중 CS_n 상승 → 슬레이브는 카운터 초기화, MISO 해제, WAIT_SELECT 복귀.</text>
+</g></svg>

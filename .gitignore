@@ -1,0 +1,25 @@
+
+# Vivado generated files
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+.gen/
+.Xil/
+Xil/
+
+# Simulation outputs
+*.vcd
+*.wdb
+*.wcfg.bak
+
+# Windows
+Thumbs.db
+Desktop.ini

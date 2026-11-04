@@ -1,0 +1,3735 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b0000000-0000-4000-8000-000000000001")
+	(paper "A3")
+	(title_block
+		(title "BASYS3 MASTER / SLAVE SENSOR HARDWARE")
+		(date "2026-11-04")
+		(rev "2.0")
+		(company "Basys3 SPI Sensor System")
+		(comment 1 "Component-level wiring; Master JC assignment provisional")
+		(comment 2 "DHT11 + HC-SR04 + UART + FND/LED debug")
+	)
+	(lib_symbols
+		(symbol "Custom:Basys3Master"
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "A"
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BASYS3_MASTER"
+				(at 0 19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "Basys3 Reference Manual"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Basys3 master relevant external ports"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Basys3Master_0_1"
+				(rectangle
+					(start -20.32 -15.24)
+					(end 20.32 15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Basys3Master_1_1"
+				(pin output line
+					(at 22.86 -10.16 180)
+					(length 2.54)
+					(name "SCK_JC1_K17"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -7.62 180)
+					(length 2.54)
+					(name "CSn_JC2_M18"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -5.08 180)
+					(length 2.54)
+					(name "MOSI_JC3_N17"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 22.86 -2.54 180)
+					(length 2.54)
+					(name "MISO_JC4_P18"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 0 180)
+					(length 2.54)
+					(name "GND_JC5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Custom:Basys3Slave"
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "A"
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BASYS3_SLAVE"
+				(at 0 19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "Basys3 Reference Manual"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Basys3 slave relevant external ports"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Basys3Slave_0_1"
+				(rectangle
+					(start -20.32 -15.24)
+					(end 20.32 15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Basys3Slave_1_1"
+				(pin input line
+					(at -22.86 -10.16 0)
+					(length 2.54)
+					(name "SCK_JC1_K17"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -7.62 0)
+					(length 2.54)
+					(name "CSn_JC2_M18"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -5.08 0)
+					(length 2.54)
+					(name "MOSI_JC3_N17"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 -2.54 0)
+					(length 2.54)
+					(name "MISO_JC4_P18"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 0 0)
+					(length 2.54)
+					(name "GND_JC5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -10.16 180)
+					(length 2.54)
+					(name "DHT_JA1_J1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -7.62 180)
+					(length 2.54)
+					(name "TRIG_JA3_J2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 22.86 -5.08 180)
+					(length 2.54)
+					(name "ECHO_JA4_G2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -2.54 180)
+					(length 2.54)
+					(name "TX_A18"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 22.86 0 180)
+					(length 2.54)
+					(name "RX_B18"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 2.54 180)
+					(length 2.54)
+					(name "LED_DEBUG"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 5.08 180)
+					(length 2.54)
+					(name "FND_DATA"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 22.86 7.62 180)
+					(length 2.54)
+					(name "+3V3_JA"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 10.16 180)
+					(length 2.54)
+					(name "GND_JA"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Custom:DHT11"
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DHT11"
+				(at 0 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "DHT11"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "DHT11 sensor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "DHT11_0_1"
+				(rectangle
+					(start -7.62 -7.62)
+					(end 7.62 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "DHT11_1_1"
+				(pin power_in line
+					(at -10.16 -3.81 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "DATA"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -10.16 3.81 0)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Custom:HCSR04"
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "HC-SR04"
+				(at 0 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "HC-SR04"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Ultrasonic sensor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "HCSR04_0_1"
+				(rectangle
+					(start -7.62 -7.62)
+					(end 7.62 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "HCSR04_1_1"
+				(pin power_in line
+					(at -10.16 -3.81 0)
+					(length 2.54)
+					(name "VCC_5V"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "TRIG"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "ECHO_5V"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Custom:Power2"
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "POWER"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power input"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Power2_0_1"
+				(rectangle
+					(start -7.62 -3.81)
+					(end 7.62 3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Power2_1_1"
+				(pin power_out line
+					(at 10.16 -1.27 180)
+					(length 2.54)
+					(name "V+"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 1.27 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Custom:UART3"
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PC_USB_UART"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "UART terminal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "UART3_0_1"
+				(rectangle
+					(start -7.62 -5.08)
+					(end 7.62 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "UART3_1_1"
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "PC_RX"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "PC_TX"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Custom:PMODJA"
+			(pin_names (offset 1.27)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+			(property "Reference" "J" (at 0 -13.97 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "PMOD_JA" (at 0 13.97 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "Basys3 Reference Manual" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Slave Basys3 PMOD JA used pins" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "PMODJA_0_1" (rectangle (start -12.7 -10.16) (end 12.7 10.16) (stroke (width 0.254) (type default)) (fill (type background))))
+			(symbol "PMODJA_1_1"
+				(pin passive line (at 15.24 -6.35 180) (length 2.54) (name "JA1_J1_DHT" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 1 1)))))
+				(pin passive line (at 15.24 -3.81 180) (length 2.54) (name "JA3_J2_TRIG" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 1 1)))))
+				(pin passive line (at 15.24 -1.27 180) (length 2.54) (name "JA4_G2_ECHO" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 1 1)))))
+				(pin passive line (at 15.24 1.27 180) (length 2.54) (name "+3V3" (effects (font (size 0.9 0.9)))) (number "4" (effects (font (size 1 1)))))
+				(pin passive line (at 15.24 3.81 180) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "5" (effects (font (size 1 1)))))
+			) (embedded_fonts no)
+		)
+		(symbol "Custom:LEDBank16"
+			(pin_names (offset 1.27)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+			(property "Reference" "A" (at 0 -10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "16_LED_BANK" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "Basys3 Reference Manual" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Basys3 on-board LEDs" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "LEDBank16_0_1" (rectangle (start -15.24 -7.62) (end 15.24 7.62) (stroke (width 0.254) (type default)) (fill (type background))))
+			(symbol "LEDBank16_1_1" (pin input line (at -17.78 0 0) (length 2.54) (name "LED[15:0]" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1))))))
+			(embedded_fonts no)
+		)
+		(symbol "Custom:FND4"
+			(pin_names (offset 1.27)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+			(property "Reference" "A" (at 0 -10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "4_DIGIT_7SEG" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "Basys3 Reference Manual" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Basys3 four-digit seven-segment display" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "FND4_0_1" (rectangle (start -15.24 -7.62) (end 15.24 7.62) (stroke (width 0.254) (type default)) (fill (type background))))
+			(symbol "FND4_1_1" (pin input line (at -17.78 0 0) (length 2.54) (name "SEG[7:0]_AN[3:0]" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 1 1))))))
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 2.54 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "C"
+				(at 2.54 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.048)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.048)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(polyline
+		(pts
+			(xy 15 15) (xy 205 15) (xy 205 105) (xy 15 105) (xy 15 15)
+		)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000010")
+	)
+	(polyline
+		(pts
+			(xy 210 15) (xy 405 15) (xy 405 105) (xy 210 105) (xy 210 15)
+		)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000011")
+	)
+	(polyline
+		(pts
+			(xy 15 110) (xy 140 110) (xy 140 195) (xy 15 195) (xy 15 110)
+		)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000012")
+	)
+	(polyline
+		(pts
+			(xy 145 110) (xy 280 110) (xy 280 195) (xy 145 195) (xy 145 110)
+		)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000013")
+	)
+	(polyline
+		(pts
+			(xy 285 110) (xy 405 110) (xy 405 195) (xy 285 195) (xy 285 110)
+		)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000014")
+	)
+	(polyline
+		(pts
+			(xy 15 200) (xy 405 200) (xy 405 270) (xy 15 270) (xy 15 200)
+		)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000015")
+	)
+	(text "01  BASYS3 MASTER ↔ SLAVE / SPI MODE 0"
+		(exclude_from_sim no)
+		(at 18 18 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000020")
+	)
+	(text "SCK ≤ 1 MHz | CS_n active-low | sample rising / shift falling"
+		(exclude_from_sim no)
+		(at 18 23 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000021")
+	)
+	(text "MASTER pinout is provisional; SLAVE follows current XDC."
+		(exclude_from_sim no)
+		(at 20 91 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000050")
+	)
+	(text "Do not connect board 3.3 V rails. Connect common GND first."
+		(exclude_from_sim no)
+		(at 20 97 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000051")
+	)
+	(text "XC7A35T-1CPG236C" (exclude_from_sim no) (at 38 47 0) (effects (font (size 0.9 0.9)) (justify left)) (uuid "d0000000-0000-4000-8000-000000000001"))
+	(text "CLK W5 / 100 MHz" (exclude_from_sim no) (at 38 52 0) (effects (font (size 0.9 0.9)) (justify left)) (uuid "d0000000-0000-4000-8000-000000000002"))
+	(text "SPI MASTER FSM" (exclude_from_sim no) (at 38 57 0) (effects (font (size 0.9 0.9)) (justify left)) (uuid "d0000000-0000-4000-8000-000000000003"))
+	(text "PMOD JC / USB-JTAG" (exclude_from_sim no) (at 38 62 0) (effects (font (size 0.9 0.9)) (justify left)) (uuid "d0000000-0000-4000-8000-000000000004"))
+	(text "XC7A35T" (exclude_from_sim no) (at 154 45 0) (effects (font (size 0.75 0.75)) (justify left)) (uuid "d0000000-0000-4000-8000-000000000005"))
+	(text "SPI SLAVE" (exclude_from_sim no) (at 154 49 0) (effects (font (size 0.75 0.75)) (justify left)) (uuid "d0000000-0000-4000-8000-000000000006"))
+	(text "DHT / HC FSM" (exclude_from_sim no) (at 154 53 0) (effects (font (size 0.75 0.75)) (justify left)) (uuid "d0000000-0000-4000-8000-000000000007"))
+	(text "UART / FND" (exclude_from_sim no) (at 154 57 0) (effects (font (size 0.75 0.75)) (justify left)) (uuid "d0000000-0000-4000-8000-000000000008"))
+	(text "02  SLAVE PORT / ON-BOARD I/O MAP"
+		(exclude_from_sim no)
+		(at 213 18 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000060")
+	)
+	(text "J6 / PMOD JA SENSOR HEADER"
+		(exclude_from_sim no)
+		(at 215 31 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000061")
+	)
+	(text "JA VCC = 3.3 V ONLY"
+		(exclude_from_sim no)
+		(at 215 78 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000062")
+	)
+	(text "DHT11: JA1/J1   HC-SR04: JA3/J2, JA4/G2"
+		(exclude_from_sim no)
+		(at 215 84 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000063")
+	)
+	(text "HC ECHO MUST PASS THROUGH R1/R2 DIVIDER"
+		(exclude_from_sim no)
+		(at 215 90 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000064")
+	)
+	(text "JC1/K17 SCK | JC2/M18 CS_n | JC3/N17 MOSI | JC4/P18 MISO"
+		(exclude_from_sim no)
+		(at 215 68 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000065")
+	)
+	(text "LED[7:0]  received byte"
+		(exclude_from_sim no)
+		(at 357 36 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000066")
+	)
+	(text "LED8       write toggle"
+		(exclude_from_sim no)
+		(at 357 42 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000067")
+	)
+	(text "LED9       read toggle"
+		(exclude_from_sim no)
+		(at 357 48 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000068")
+	)
+	(text "LED15      CS LOW interval"
+		(exclude_from_sim no)
+		(at 357 54 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000069")
+	)
+	(text "4-digit FND: temperature / humidity / distance"
+		(exclude_from_sim no)
+		(at 357 72 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000070")
+	)
+	(text "SPI read map: 00 HUM_INT | 01 HUM_DEC | 02 TEMP_INT | 03 TEMP_DEC"
+		(exclude_from_sim no)
+		(at 300 88 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000071")
+	)
+	(text "Self-test: F0 → A5 | F1 → 5A | MISO Hi-Z while CS is HIGH"
+		(exclude_from_sim no)
+		(at 300 95 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000072")
+	)
+	(wire (pts (xy 260.24 58.35) (xy 290 58.35)) (stroke (width 0) (type default)) (uuid "d0000000-0000-4000-8000-000000000010"))
+	(label "DHT_DATA" (at 290 58.35 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "d0000000-0000-4000-8000-000000000011"))
+	(wire (pts (xy 260.24 55.81) (xy 290 55.81)) (stroke (width 0) (type default)) (uuid "d0000000-0000-4000-8000-000000000012"))
+	(label "HC_TRIG" (at 290 55.81 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "d0000000-0000-4000-8000-000000000013"))
+	(wire (pts (xy 260.24 53.27) (xy 290 53.27)) (stroke (width 0) (type default)) (uuid "d0000000-0000-4000-8000-000000000014"))
+	(label "HC_ECHO_3V3" (at 290 53.27 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "d0000000-0000-4000-8000-000000000015"))
+	(wire (pts (xy 260.24 50.73) (xy 290 50.73)) (stroke (width 0) (type default)) (uuid "d0000000-0000-4000-8000-000000000016"))
+	(label "+3V3" (at 290 50.73 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "d0000000-0000-4000-8000-000000000017"))
+	(wire (pts (xy 260.24 48.19) (xy 290 48.19)) (stroke (width 0) (type default)) (uuid "d0000000-0000-4000-8000-000000000018"))
+	(label "GND" (at 290 48.19 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "d0000000-0000-4000-8000-000000000019"))
+	(wire (pts (xy 317.22 45) (xy 300 45)) (stroke (width 0) (type default)) (uuid "d0000000-0000-4000-8000-000000000020"))
+	(label "LED_DEBUG" (at 300 45 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "d0000000-0000-4000-8000-000000000021"))
+	(wire (pts (xy 317.22 70) (xy 300 70)) (stroke (width 0) (type default)) (uuid "d0000000-0000-4000-8000-000000000022"))
+	(label "FND_DATA" (at 300 70 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "d0000000-0000-4000-8000-000000000023"))
+	(text "LED pins: U16,E19,U19,V19,W18,U15,U14,V14 / V13 / V3 / ... / L1" (exclude_from_sim no) (at 215 72 0) (effects (font (size 0.7 0.7)) (justify left)) (uuid "d0000000-0000-4000-8000-000000000024"))
+	(text "FND SEG: W7,W6,U8,V8,U5,V5,U7,V7   AN: U2,U4,V4,W4" (exclude_from_sim no) (at 215 76 0) (effects (font (size 0.7 0.7)) (justify left)) (uuid "d0000000-0000-4000-8000-000000000025"))
+	(text "03  DHT11 / 3.3 V SINGLE-WIRE"
+		(exclude_from_sim no)
+		(at 18 113 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000080")
+	)
+	(text "R3 4.7 kΩ pull-up | C1 100 nF close to sensor"
+		(exclude_from_sim no)
+		(at 20 178 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000096")
+	)
+	(text "1 VDD | 2 DATA | 3 NC | 4 GND"
+		(exclude_from_sim no)
+		(at 20 184 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000097")
+	)
+	(text "04  HC-SR04 / ECHO LEVEL DIVIDER"
+		(exclude_from_sim no)
+		(at 148 113 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000100")
+	)
+	(text "R1 2.2 kΩ + R2 3.3 kΩ: 5 V → ≈3.0 V"
+		(exclude_from_sim no)
+		(at 150 178 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000119")
+	)
+	(text "Never connect ECHO directly | C2 100 nF"
+		(exclude_from_sim no)
+		(at 150 184 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000120")
+	)
+	(text "05  USB-UART / 9600 bps 8N1"
+		(exclude_from_sim no)
+		(at 288 113 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000130")
+	)
+	(text "A18 RsTx → PC RX"
+		(exclude_from_sim no)
+		(at 292 164 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000137")
+	)
+	(text "B18 RsRx ← PC TX"
+		(exclude_from_sim no)
+		(at 292 170 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000138")
+	)
+	(text "UART RX → FIFO → Control Tower preserved"
+		(exclude_from_sim no)
+		(at 292 181 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000139")
+	)
+	(text "06  POWER DISTRIBUTION / COMMON GND / CABLE ORDER"
+		(exclude_from_sim no)
+		(at 18 203 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000150")
+	)
+	(text "Each Basys3 uses its own USB. MASTER_USB5V and SLAVE_USB5V are NOT connected."
+		(exclude_from_sim no)
+		(at 20 252 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000163")
+	)
+	(text "HC-SR04 uses regulated external +5 V. All grounds share this GND bus."
+		(exclude_from_sim no)
+		(at 20 258 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000164")
+	)
+	(text "POWER OFF → COMMON GND → SPI/SENSOR SIGNALS → SENSOR POWER → BOARD USB"
+		(exclude_from_sim no)
+		(at 20 264 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000165")
+	)
+	(text "SPI: JC1 SCK | JC2 CS_n | JC3 MOSI | JC4 MISO | JC5 GND"
+		(exclude_from_sim no)
+		(at 225 252 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000166")
+	)
+	(text "Sensors: JA1 DHT | JA3 TRIG | JA4 divided ECHO | JA +3V3/GND"
+		(exclude_from_sim no)
+		(at 225 258 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000167")
+	)
+	(junction
+		(at 180.16 242)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0000000-0000-4000-8000-000000000160")
+	)
+	(junction
+		(at 280.16 242)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0000000-0000-4000-8000-000000000161")
+	)
+	(no_connect
+		(at 109.84 144.19)
+		(uuid "b0000000-0000-4000-8000-000000000087")
+	)
+	(wire
+		(pts
+			(xy 87.01 147.91) (xy 87.01 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20b6f100-86ea-4a48-8a38-e4b49a13ef26")
+	)
+	(wire
+		(pts
+			(xy 87.01 146.05) (xy 87.63 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39c50ba4-d2c8-4935-840d-05f818484867")
+	)
+	(wire
+		(pts
+			(xy 87.63 132.19) (xy 87.63 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84ce7670-d450-47e0-9349-63ccc05b9afa")
+	)
+	(wire
+		(pts
+			(xy 87.01 147.91) (xy 109.87 147.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7f68bd0-f89c-45f0-b606-2054aa2df71c")
+	)
+	(wire
+		(pts
+			(xy 77.86 68.16) (xy 142.14 68.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000022")
+	)
+	(wire
+		(pts
+			(xy 77.86 65.62) (xy 142.14 65.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000023")
+	)
+	(wire
+		(pts
+			(xy 77.86 63.08) (xy 142.14 63.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000024")
+	)
+	(wire
+		(pts
+			(xy 77.86 60.54) (xy 142.14 60.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000025")
+	)
+	(wire
+		(pts
+			(xy 77.86 58) (xy 142.14 58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000026")
+	)
+	(wire
+		(pts
+			(xy 187.86 68.16) (xy 199 68.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000032")
+	)
+	(wire
+		(pts
+			(xy 187.86 65.62) (xy 199 65.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000034")
+	)
+	(wire
+		(pts
+			(xy 187.86 63.08) (xy 199 63.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000036")
+	)
+	(wire
+		(pts
+			(xy 187.86 60.54) (xy 199 60.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000038")
+	)
+	(wire
+		(pts
+			(xy 187.86 58) (xy 199 58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000040")
+	)
+	(wire
+		(pts
+			(xy 187.86 55.46) (xy 199 55.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000042")
+	)
+	(wire
+		(pts
+			(xy 187.86 52.92) (xy 199 52.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000044")
+	)
+	(wire
+		(pts
+			(xy 187.86 50.38) (xy 199 50.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000046")
+	)
+	(wire
+		(pts
+			(xy 187.86 47.84) (xy 199 47.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000048")
+	)
+	(wire
+		(pts
+			(xy 109.84 151.81) (xy 95 151.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000081")
+	)
+	(wire
+		(pts
+			(xy 109.84 140.38) (xy 95 140.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000085")
+	)
+	(wire
+		(pts
+			(xy 65 156.19) (xy 65 151)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000092")
+	)
+	(wire
+		(pts
+			(xy 65 163.81) (xy 65 169)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000094")
+	)
+	(wire
+		(pts
+			(xy 249.84 151.81) (xy 235 151.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000101")
+	)
+	(wire
+		(pts
+			(xy 249.84 149.27) (xy 230 149.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000103")
+	)
+	(wire
+		(pts
+			(xy 249.84 146.73) (xy 223.81 146.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000105")
+	)
+	(wire
+		(pts
+			(xy 249.84 144.19) (xy 235 144.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000107")
+	)
+	(wire
+		(pts
+			(xy 216.19 146.73) (xy 205 146.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000109")
+	)
+	(wire
+		(pts
+			(xy 205 146.73) (xy 205 156.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000111")
+	)
+	(wire
+		(pts
+			(xy 205 163.81) (xy 205 169)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000112")
+	)
+	(wire
+		(pts
+			(xy 180 156.19) (xy 180 151)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000115")
+	)
+	(wire
+		(pts
+			(xy 180 163.81) (xy 180 169)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000117")
+	)
+	(wire
+		(pts
+			(xy 364.84 147.54) (xy 325 147.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000131")
+	)
+	(wire
+		(pts
+			(xy 364.84 145) (xy 325 145)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000133")
+	)
+	(wire
+		(pts
+			(xy 364.84 142.46) (xy 325 142.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000135")
+	)
+	(wire
+		(pts
+			(xy 80.16 226.27) (xy 100 226.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000151")
+	)
+	(wire
+		(pts
+			(xy 180.16 226.27) (xy 200 226.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000153")
+	)
+	(wire
+		(pts
+			(xy 280.16 226.27) (xy 300 226.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000155")
+	)
+	(wire
+		(pts
+			(xy 80.16 223.73) (xy 80.16 242)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000157")
+	)
+	(wire
+		(pts
+			(xy 180.16 223.73) (xy 180.16 242)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000158")
+	)
+	(wire
+		(pts
+			(xy 280.16 223.73) (xy 280.16 242)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000159")
+	)
+	(wire
+		(pts
+			(xy 80.16 242) (xy 330 242)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000168")
+	)
+	(wire
+		(pts
+			(xy 109.87 147.91) (xy 109.84 148)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eca30340-3bb6-4af4-bfd4-91d3624022e6")
+	)
+	(label "SPI_SCK"
+		(at 105 68.16 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000027")
+	)
+	(label "SPI_CS_N"
+		(at 105 65.62 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000028")
+	)
+	(label "SPI_MOSI"
+		(at 105 63.08 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000029")
+	)
+	(label "SPI_MISO"
+		(at 105 60.54 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000030")
+	)
+	(label "GND"
+		(at 105 58 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000031")
+	)
+	(label "DHT_DATA"
+		(at 199 68.16 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000033")
+	)
+	(label "HC_TRIG"
+		(at 199 65.62 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000035")
+	)
+	(label "HC_ECHO_3V3"
+		(at 199 63.08 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000037")
+	)
+	(label "SLAVE_TX_A18"
+		(at 199 60.54 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000039")
+	)
+	(label "SLAVE_RX_B18"
+		(at 199 58 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000041")
+	)
+	(label "LED_DEBUG"
+		(at 199 55.46 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000043")
+	)
+	(label "FND_DATA"
+		(at 199 52.92 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000045")
+	)
+	(label "+3V3"
+		(at 199 50.38 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000047")
+	)
+	(label "GND"
+		(at 199 47.84 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000049")
+	)
+	(label "+3V3"
+		(at 95 151.81 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000082")
+	)
+	(label "DHT_DATA"
+		(at 90.03 147.91 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000084")
+	)
+	(label "GND"
+		(at 95 140.38 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000086")
+	)
+	(label "+3V3"
+		(at 87.63 132.19 270)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000089")
+	)
+	(label "+3V3"
+		(at 65 151 270)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000093")
+	)
+	(label "GND"
+		(at 65 169 270)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000095")
+	)
+	(label "+5V"
+		(at 235 151.81 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000102")
+	)
+	(label "HC_TRIG"
+		(at 230 149.27 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000104")
+	)
+	(label "HC_ECHO_5V"
+		(at 230 146.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000106")
+	)
+	(label "GND"
+		(at 235 144.19 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000108")
+	)
+	(label "HC_ECHO_3V3"
+		(at 205 146.73 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000110")
+	)
+	(label "GND"
+		(at 205 169 270)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000113")
+	)
+	(label "+5V"
+		(at 180 151 270)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000116")
+	)
+	(label "GND"
+		(at 180 169 270)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000118")
+	)
+	(label "SLAVE_TX_A18"
+		(at 325 147.54 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000132")
+	)
+	(label "SLAVE_RX_B18"
+		(at 325 145 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000134")
+	)
+	(label "GND"
+		(at 325 142.46 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000136")
+	)
+	(label "MASTER_USB5V"
+		(at 100 226.27 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000152")
+	)
+	(label "SLAVE_USB5V"
+		(at 200 226.27 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000154")
+	)
+	(label "+5V"
+		(at 300 226.27 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000156")
+	)
+	(label "GND"
+		(at 330 242 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0000000-0000-4000-8000-000000000162")
+	)
+	(symbol
+		(lib_id "Custom:Basys3Master")
+		(at 55 58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000200")
+		(property "Reference" "A1"
+			(at 55 36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BASYS3 MASTER"
+			(at 55 80 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55 58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "Basys3"
+			(at 55 58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Master board"
+			(at 55 58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000201")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000202")
+		)
+		(pin "3"
+			(uuid "b0000000-0000-4000-8000-000000000203")
+		)
+		(pin "4"
+			(uuid "b0000000-0000-4000-8000-000000000204")
+		)
+		(pin "5"
+			(uuid "b0000000-0000-4000-8000-000000000205")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom:Basys3Slave")
+		(at 165 58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000210")
+		(property "Reference" "A2"
+			(at 165 36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BASYS3 SLAVE"
+			(at 165 80 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165 58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "Basys3"
+			(at 165 58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Slave board"
+			(at 165 58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000211")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000212")
+		)
+		(pin "3"
+			(uuid "b0000000-0000-4000-8000-000000000213")
+		)
+		(pin "4"
+			(uuid "b0000000-0000-4000-8000-000000000214")
+		)
+		(pin "5"
+			(uuid "b0000000-0000-4000-8000-000000000215")
+		)
+		(pin "6"
+			(uuid "b0000000-0000-4000-8000-000000000216")
+		)
+		(pin "7"
+			(uuid "b0000000-0000-4000-8000-000000000217")
+		)
+		(pin "8"
+			(uuid "b0000000-0000-4000-8000-000000000218")
+		)
+		(pin "9"
+			(uuid "b0000000-0000-4000-8000-000000000219")
+		)
+		(pin "10"
+			(uuid "b0000000-0000-4000-8000-000000000220")
+		)
+		(pin "11"
+			(uuid "b0000000-0000-4000-8000-000000000221")
+		)
+		(pin "12"
+			(uuid "b0000000-0000-4000-8000-000000000222")
+		)
+		(pin "13"
+			(uuid "b0000000-0000-4000-8000-000000000223")
+		)
+		(pin "14"
+			(uuid "b0000000-0000-4000-8000-000000000224")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "A2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom:DHT11")
+		(at 120 148 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000230")
+		(property "Reference" "U1"
+			(at 120 136 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DHT11"
+			(at 120 160 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm"
+			(at 120 148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "DHT11"
+			(at 120 148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Sensor"
+			(at 120 148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000231")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000232")
+		)
+		(pin "3"
+			(uuid "b0000000-0000-4000-8000-000000000233")
+		)
+		(pin "4"
+			(uuid "b0000000-0000-4000-8000-000000000234")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 87.63 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000240")
+		(property "Reference" "R3"
+			(at 90.678 139.446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 91.186 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pullup"
+			(at 87.63 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000241")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000242")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 65 160 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000250")
+		(property "Reference" "C1"
+			(at 68 158 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 68 161 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 65 160 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 65 160 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Decoupling"
+			(at 65 160 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000251")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000252")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom:HCSR04")
+		(at 260 148 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000260")
+		(property "Reference" "U2"
+			(at 260 136 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HC-SR04"
+			(at 260 160 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 260 148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "HC-SR04"
+			(at 260 148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Sensor"
+			(at 260 148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000261")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000262")
+		)
+		(pin "3"
+			(uuid "b0000000-0000-4000-8000-000000000263")
+		)
+		(pin "4"
+			(uuid "b0000000-0000-4000-8000-000000000264")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 220 146.73 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000270")
+		(property "Reference" "R1"
+			(at 220 143 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 220 150.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220 146.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220 146.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Divider"
+			(at 220 146.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000271")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000272")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205 160 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000280")
+		(property "Reference" "R2"
+			(at 208 158 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3k"
+			(at 208 161 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205 160 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205 160 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Divider"
+			(at 205 160 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000281")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000282")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 180 160 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000290")
+		(property "Reference" "C2"
+			(at 183 158 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 183 161 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180 160 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180 160 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Decoupling"
+			(at 180 160 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000291")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000292")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom:UART3")
+		(at 375 145 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000300")
+		(property "Reference" "J2"
+			(at 375 134 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PC USB-UART"
+			(at 375 156 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 375 145 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 375 145 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Serial"
+			(at 375 145 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000301")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000302")
+		)
+		(pin "3"
+			(uuid "b0000000-0000-4000-8000-000000000303")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom:Power2")
+		(at 70 225 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000310")
+		(property "Reference" "J3"
+			(at 70 216 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MASTER USB"
+			(at 70 234 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 70 225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 70 225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power"
+			(at 70 225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000311")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000312")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom:Power2")
+		(at 170 225 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000320")
+		(property "Reference" "J4"
+			(at 170 216 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SLAVE USB"
+			(at 170 234 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170 225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170 225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power"
+			(at 170 225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000321")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000322")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom:Power2")
+		(at 270 225 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0000000-0000-4000-8000-000000000330")
+		(property "Reference" "J5"
+			(at 270 216 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HC-SR04 5V"
+			(at 270 234 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 270 225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270 225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power"
+			(at 270 225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0000000-0000-4000-8000-000000000331")
+		)
+		(pin "2"
+			(uuid "b0000000-0000-4000-8000-000000000332")
+		)
+		(instances
+			(project "10_Dual_Basys3_Component_Circuit"
+				(path "/b0000000-0000-4000-8000-000000000001"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom:PMODJA") (at 245 52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "d0000000-0000-4000-8000-000000000100")
+		(property "Reference" "J6" (at 245 36 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "SLAVE PMOD JA" (at 245 68 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 245 52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "Basys3 Reference Manual" (at 245 52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Sensor PMOD header" (at 245 52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d0000000-0000-4000-8000-000000000101")) (pin "2" (uuid "d0000000-0000-4000-8000-000000000102"))
+		(pin "3" (uuid "d0000000-0000-4000-8000-000000000103")) (pin "4" (uuid "d0000000-0000-4000-8000-000000000104"))
+		(pin "5" (uuid "d0000000-0000-4000-8000-000000000105"))
+		(instances (project "10_Dual_Basys3_Component_Circuit" (path "/b0000000-0000-4000-8000-000000000001" (reference "J6") (unit 1))))
+	)
+	(symbol
+		(lib_id "Custom:LEDBank16") (at 335 45 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "d0000000-0000-4000-8000-000000000110")
+		(property "Reference" "A4" (at 335 34 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "16 ON-BOARD LEDs" (at 335 56 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 335 45 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "Basys3 Reference Manual" (at 335 45 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "On-board LED bank" (at 335 45 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d0000000-0000-4000-8000-000000000111"))
+		(instances (project "10_Dual_Basys3_Component_Circuit" (path "/b0000000-0000-4000-8000-000000000001" (reference "A4") (unit 1))))
+	)
+	(symbol
+		(lib_id "Custom:FND4") (at 335 70 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "d0000000-0000-4000-8000-000000000120")
+		(property "Reference" "A5" (at 335 59 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "4-DIGIT FND" (at 335 81 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 335 70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "Basys3 Reference Manual" (at 335 70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "On-board seven-segment display" (at 335 70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d0000000-0000-4000-8000-000000000121"))
+		(instances (project "10_Dual_Basys3_Component_Circuit" (path "/b0000000-0000-4000-8000-000000000001" (reference "A5") (unit 1))))
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

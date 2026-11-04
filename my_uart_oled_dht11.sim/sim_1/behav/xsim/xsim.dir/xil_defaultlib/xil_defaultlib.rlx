@@ -1,0 +1,19 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sim_1/imports/sim/tb_dht11.v,1793757461,verilog,,,,tb_dht11,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sim_1/new/tb_dht11_sync_compare.v,1793753804,verilog,,,,tb_dht11_sync_compare,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/imports/ai2/09.my_minsec_stopwatch/09.my_minsec_stopwatch.srcs/sources_1/imports/sources_1/new/fnd_controller.v,1793683337,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/imports/ai2/09.my_minsec_stopwatch/09.my_minsec_stopwatch.srcs/sources_1/imports/sources_1/new/tick_generator.v,,bin2bcd4digit;fnd_controller;fnd_digit_display;fnd_digit_select,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/imports/ai2/09.my_minsec_stopwatch/09.my_minsec_stopwatch.srcs/sources_1/imports/sources_1/new/tick_generator.v,1793326737,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/uart_controller.v,,tick_generator,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/control_tower.v,1793584758,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/data_sender.v,,control_tower,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/data_sender.v,1793686339,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/new/dht11.v,,ascii_string_table;data_sender,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/top.v,1793686628,verilog,,,,top,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/uart_controller.v,1793692410,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/new/uart_fifo.v,,uart_controller,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/uart_rx.v,1793588252,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/new/uart_system.v,,uart_rx,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/uart_tx.v,1793338647,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/top.v,,uart_tx,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/new/dht11.v,1793756064,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sim_1/imports/sim/tb_dht11.v,,dht11,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/new/dht11_fnd_controller.v,1793692502,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/imports/ai2/09.my_minsec_stopwatch/09.my_minsec_stopwatch.srcs/sources_1/imports/sources_1/new/fnd_controller.v,,dht11_fnd_controller,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/new/uart_fifo.v,1793686665,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/uart_rx.v,,uart_fifo,,,,,,,,
+D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/new/uart_system.v,1793686541,verilog,,D:/project/FPGA/ai2/my_uart_oled_dht11/my_uart_oled_dht11.srcs/sources_1/imports/sources_1/new/uart_tx.v,,uart_system,,,,,,,,

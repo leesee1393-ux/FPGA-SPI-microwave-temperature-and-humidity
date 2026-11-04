@@ -1,0 +1,1712 @@
+(export
+	(version "E")
+	(design
+		(source "D:\\project\\FPGA\\ai2\\my_uart_oled_dht11\\10_Dual_Basys3_Component_Circuit.kicad_sch")
+		(date "2026-11-04T20:10:50")
+		(tool "Eeschema 10.0.3")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "BASYS3 MASTER / SLAVE SENSOR HARDWARE")
+				(company "Basys3 SPI Sensor System")
+				(rev "2.0")
+				(date "2026-11-04")
+				(source "10_Dual_Basys3_Component_Circuit.kicad_sch")
+				(comment
+					(number "1")
+					(value "Component-level wiring; Master JC assignment provisional")
+				)
+				(comment
+					(number "2")
+					(value "DHT11 + HC-SR04 + UART + FND/LED debug")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "A1")
+			(value "BASYS3 MASTER")
+			(datasheet "Basys3")
+			(description "Master board")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "Basys3")
+				(field
+					(name "Description") "Master board")
+			)
+			(libsource
+				(lib "Custom")
+				(part "Basys3Master")
+				(description "Basys3 master relevant external ports")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000200")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "A2")
+			(value "BASYS3 SLAVE")
+			(datasheet "Basys3")
+			(description "Slave board")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "Basys3")
+				(field
+					(name "Description") "Slave board")
+			)
+			(libsource
+				(lib "Custom")
+				(part "Basys3Slave")
+				(description "Basys3 slave relevant external ports")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000210")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "6")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "A4")
+			(value "16 ON-BOARD LEDs")
+			(datasheet "Basys3 Reference Manual")
+			(description "On-board LED bank")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "Basys3 Reference Manual")
+				(field
+					(name "Description") "On-board LED bank")
+			)
+			(libsource
+				(lib "Custom")
+				(part "LEDBank16")
+				(description "Basys3 on-board LEDs")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d0000000-0000-4000-8000-000000000110")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "A5")
+			(value "4-DIGIT FND")
+			(datasheet "Basys3 Reference Manual")
+			(description "On-board seven-segment display")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "Basys3 Reference Manual")
+				(field
+					(name "Description") "On-board seven-segment display")
+			)
+			(libsource
+				(lib "Custom")
+				(part "FND4")
+				(description "Basys3 four-digit seven-segment display")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d0000000-0000-4000-8000-000000000120")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C1")
+			(value "100n")
+			(description "Decoupling")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Decoupling")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000250")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "100n")
+			(description "Decoupling")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Decoupling")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000290")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "PC USB-UART")
+			(description "Serial")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Serial")
+			)
+			(libsource
+				(lib "Custom")
+				(part "UART3")
+				(description "UART terminal")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000300")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "MASTER USB")
+			(description "Power")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Power")
+			)
+			(libsource
+				(lib "Custom")
+				(part "Power2")
+				(description "Power input")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000310")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "SLAVE USB")
+			(description "Power")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Power")
+			)
+			(libsource
+				(lib "Custom")
+				(part "Power2")
+				(description "Power input")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000320")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J5")
+			(value "HC-SR04 5V")
+			(description "Power")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Power")
+			)
+			(libsource
+				(lib "Custom")
+				(part "Power2")
+				(description "Power input")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000330")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J6")
+			(value "SLAVE PMOD JA")
+			(datasheet "Basys3 Reference Manual")
+			(description "Sensor PMOD header")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "Basys3 Reference Manual")
+				(field
+					(name "Description") "Sensor PMOD header")
+			)
+			(libsource
+				(lib "Custom")
+				(part "PMODJA")
+				(description "Slave Basys3 PMOD JA used pins")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d0000000-0000-4000-8000-000000000100")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "2.2k")
+			(description "Divider")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Divider")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000270")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "3.3k")
+			(description "Divider")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Divider")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000280")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "4.7k")
+			(description "Pullup")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Pullup")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000240")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DHT11")
+			(footprint "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm")
+			(datasheet "DHT11")
+			(description "Sensor")
+			(fields
+				(field
+					(name "Footprint") "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm")
+				(field
+					(name "Datasheet") "DHT11")
+				(field
+					(name "Description") "Sensor")
+			)
+			(libsource
+				(lib "Custom")
+				(part "DHT11")
+				(description "DHT11 sensor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000230")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "HC-SR04")
+			(datasheet "HC-SR04")
+			(description "Sensor")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "HC-SR04")
+				(field
+					(name "Description") "Sensor")
+			)
+			(libsource
+				(lib "Custom")
+				(part "HCSR04")
+				(description "Ultrasonic sensor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "10_Dual_Basys3_Component_Circuit.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000000-0000-4000-8000-000000000260")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Custom")
+			(part "Basys3Master")
+			(description "Basys3 master relevant external ports")
+			(docs "Basys3 Reference Manual")
+			(fields
+				(field
+					(name "Reference") "A")
+				(field
+					(name "Value") "BASYS3_MASTER")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "Basys3 Reference Manual")
+				(field
+					(name "Description") "Basys3 master relevant external ports")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "SCK_JC1_K17")
+					(type "output")
+				)
+				(pin
+					(num "2")
+					(name "CSn_JC2_M18")
+					(type "output")
+				)
+				(pin
+					(num "3")
+					(name "MOSI_JC3_N17")
+					(type "output")
+				)
+				(pin
+					(num "4")
+					(name "MISO_JC4_P18")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "GND_JC5")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Custom")
+			(part "Basys3Slave")
+			(description "Basys3 slave relevant external ports")
+			(docs "Basys3 Reference Manual")
+			(fields
+				(field
+					(name "Reference") "A")
+				(field
+					(name "Value") "BASYS3_SLAVE")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "Basys3 Reference Manual")
+				(field
+					(name "Description") "Basys3 slave relevant external ports")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "SCK_JC1_K17")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "CSn_JC2_M18")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "MOSI_JC3_N17")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "MISO_JC4_P18")
+					(type "output")
+				)
+				(pin
+					(num "5")
+					(name "GND_JC5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "DHT_JA1_J1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "7")
+					(name "TRIG_JA3_J2")
+					(type "output")
+				)
+				(pin
+					(num "8")
+					(name "ECHO_JA4_G2")
+					(type "input")
+				)
+				(pin
+					(num "9")
+					(name "TX_A18")
+					(type "output")
+				)
+				(pin
+					(num "10")
+					(name "RX_B18")
+					(type "input")
+				)
+				(pin
+					(num "11")
+					(name "LED_DEBUG")
+					(type "output")
+				)
+				(pin
+					(num "12")
+					(name "FND_DATA")
+					(type "output")
+				)
+				(pin
+					(num "13")
+					(name "+3V3_JA")
+					(type "power_out")
+				)
+				(pin
+					(num "14")
+					(name "GND_JA")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Custom")
+			(part "DHT11")
+			(description "DHT11 sensor")
+			(docs "DHT11")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "DHT11")
+				(field
+					(name "Footprint") "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm")
+				(field
+					(name "Datasheet") "DHT11")
+				(field
+					(name "Description") "DHT11 sensor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "DATA")
+					(type "bidirectional")
+				)
+				(pin
+					(num "3")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Custom")
+			(part "FND4")
+			(description "Basys3 four-digit seven-segment display")
+			(docs "Basys3 Reference Manual")
+			(fields
+				(field
+					(name "Reference") "A")
+				(field
+					(name "Value") "4_DIGIT_7SEG")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "Basys3 Reference Manual")
+				(field
+					(name "Description") "Basys3 four-digit seven-segment display")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "SEG[7:0]_AN[3:0]")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "Custom")
+			(part "HCSR04")
+			(description "Ultrasonic sensor")
+			(docs "HC-SR04")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "HC-SR04")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "HC-SR04")
+				(field
+					(name "Description") "Ultrasonic sensor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VCC_5V")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "TRIG")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "ECHO_5V")
+					(type "output")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Custom")
+			(part "LEDBank16")
+			(description "Basys3 on-board LEDs")
+			(docs "Basys3 Reference Manual")
+			(fields
+				(field
+					(name "Reference") "A")
+				(field
+					(name "Value") "16_LED_BANK")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "Basys3 Reference Manual")
+				(field
+					(name "Description") "Basys3 on-board LEDs")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "LED[15:0]")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "Custom")
+			(part "PMODJA")
+			(description "Slave Basys3 PMOD JA used pins")
+			(docs "Basys3 Reference Manual")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "PMOD_JA")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "Basys3 Reference Manual")
+				(field
+					(name "Description") "Slave Basys3 PMOD JA used pins")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "JA1_J1_DHT")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "JA3_J2_TRIG")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "JA4_G2_ECHO")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "+3V3")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Custom")
+			(part "Power2")
+			(description "Power input")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "POWER")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Power input")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "V+")
+					(type "power_out")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Custom")
+			(part "UART3")
+			(description "UART terminal")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "PC_USB_UART")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "UART terminal")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "PC_RX")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "PC_TX")
+					(type "output")
+				)
+				(pin
+					(num "3")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C")
+			(description "Capacitor")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "/+3V3")
+			(class "Default")
+			(node
+				(ref "A2")
+				(pin "13")
+				(pinfunction "+3V3_JA_13")
+				(pintype "power_out")
+			)
+			(node
+				(ref "C1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "4")
+				(pinfunction "+3V3_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "VDD_1")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "2")
+			(name "/+5V")
+			(class "Default")
+			(node
+				(ref "C2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "1")
+				(pinfunction "V+_1")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "VCC_5V_1")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "3")
+			(name "/DHT_DATA")
+			(class "Default")
+			(node
+				(ref "A2")
+				(pin "6")
+				(pinfunction "DHT_JA1_J1_6")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "J6")
+				(pin "1")
+				(pinfunction "JA1_J1_DHT_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "DATA_2")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "4")
+			(name "/FND_DATA")
+			(class "Default")
+			(node
+				(ref "A2")
+				(pin "12")
+				(pinfunction "FND_DATA_12")
+				(pintype "output")
+			)
+			(node
+				(ref "A5")
+				(pin "1")
+				(pinfunction "SEG[7:0]_AN[3:0]_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "5")
+			(name "/GND")
+			(class "Default")
+			(node
+				(ref "A1")
+				(pin "5")
+				(pinfunction "GND_JC5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "A2")
+				(pin "14")
+				(pinfunction "GND_JA_14")
+				(pintype "passive")
+			)
+			(node
+				(ref "A2")
+				(pin "5")
+				(pinfunction "GND_JC5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "5")
+				(pinfunction "GND_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "/HC_ECHO_3V3")
+			(class "Default")
+			(node
+				(ref "A2")
+				(pin "8")
+				(pinfunction "ECHO_JA4_G2_8")
+				(pintype "input")
+			)
+			(node
+				(ref "J6")
+				(pin "3")
+				(pinfunction "JA4_G2_ECHO_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "/HC_ECHO_5V")
+			(class "Default")
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "ECHO_5V_3")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "8")
+			(name "/HC_TRIG")
+			(class "Default")
+			(node
+				(ref "A2")
+				(pin "7")
+				(pinfunction "TRIG_JA3_J2_7")
+				(pintype "output")
+			)
+			(node
+				(ref "J6")
+				(pin "2")
+				(pinfunction "JA3_J2_TRIG_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "TRIG_2")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "9")
+			(name "/LED_DEBUG")
+			(class "Default")
+			(node
+				(ref "A2")
+				(pin "11")
+				(pinfunction "LED_DEBUG_11")
+				(pintype "output")
+			)
+			(node
+				(ref "A4")
+				(pin "1")
+				(pinfunction "LED[15:0]_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "10")
+			(name "/MASTER_USB5V")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "V+_1")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "11")
+			(name "/SLAVE_RX_B18")
+			(class "Default")
+			(node
+				(ref "A2")
+				(pin "10")
+				(pinfunction "RX_B18_10")
+				(pintype "input")
+			)
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "PC_TX_2")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "12")
+			(name "/SLAVE_TX_A18")
+			(class "Default")
+			(node
+				(ref "A2")
+				(pin "9")
+				(pinfunction "TX_A18_9")
+				(pintype "output")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "PC_RX_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "13")
+			(name "/SLAVE_USB5V")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "V+_1")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "14")
+			(name "/SPI_CS_N")
+			(class "Default")
+			(node
+				(ref "A1")
+				(pin "2")
+				(pinfunction "CSn_JC2_M18_2")
+				(pintype "output")
+			)
+			(node
+				(ref "A2")
+				(pin "2")
+				(pinfunction "CSn_JC2_M18_2")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "15")
+			(name "/SPI_MISO")
+			(class "Default")
+			(node
+				(ref "A1")
+				(pin "4")
+				(pinfunction "MISO_JC4_P18_4")
+				(pintype "input")
+			)
+			(node
+				(ref "A2")
+				(pin "4")
+				(pinfunction "MISO_JC4_P18_4")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "16")
+			(name "/SPI_MOSI")
+			(class "Default")
+			(node
+				(ref "A1")
+				(pin "3")
+				(pinfunction "MOSI_JC3_N17_3")
+				(pintype "output")
+			)
+			(node
+				(ref "A2")
+				(pin "3")
+				(pinfunction "MOSI_JC3_N17_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "17")
+			(name "/SPI_SCK")
+			(class "Default")
+			(node
+				(ref "A1")
+				(pin "1")
+				(pinfunction "SCK_JC1_K17_1")
+				(pintype "output")
+			)
+			(node
+				(ref "A2")
+				(pin "1")
+				(pinfunction "SCK_JC1_K17_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "18")
+			(name "unconnected-(U1-NC-Pad3)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "NC_3")
+				(pintype "no_connect")
+			)
+		)
+	)
+)

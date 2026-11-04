@@ -1,0 +1,258 @@
+ERC report (2026-11-04T20:10:42, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(55.00 mm, 58.00 mm): Symbol A1 [Basys3Master]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(65.00 mm, 156.19 mm): Vertical Wire, length 5.19 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(65.00 mm, 156.19 mm): Symbol C1 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: 심볼 'C'가 라이브러리 'Device'의 복사본과 일치하지 않음
+    ; warning
+    @(65.00 mm, 160.00 mm): Symbol C1 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(65.00 mm, 163.81 mm): Vertical Wire, length 5.19 mm
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(70.00 mm, 225.00 mm): Symbol J3 [Power2]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.86 mm, 58.00 mm): Horizontal Wire, length 64.28 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.86 mm, 60.54 mm): Horizontal Wire, length 64.28 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.86 mm, 63.08 mm): Horizontal Wire, length 64.28 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.86 mm, 65.62 mm): Horizontal Wire, length 64.28 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.86 mm, 68.16 mm): Horizontal Wire, length 64.28 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.86 mm, 68.16 mm): Symbol A1 Pin 1 [SCK_JC1_K17, Output, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(80.16 mm, 223.73 mm): Vertical Wire, length 18.27 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(80.16 mm, 226.27 mm): Horizontal Wire, length 19.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(80.16 mm, 226.27 mm): Symbol J3 Pin 1 [V+, Power output, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(80.16 mm, 242.00 mm): Horizontal Wire, length 249.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(87.01 mm, 146.05 mm): Horizontal Wire, length 0.62 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(87.01 mm, 147.91 mm): Vertical Wire, length 1.86 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(87.01 mm, 147.91 mm): Horizontal Wire, length 22.86 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(87.63 mm, 132.19 mm): Vertical Wire, length 6.24 mm
+[lib_symbol_mismatch]: 심볼 'R'가 라이브러리 'Device'의 복사본과 일치하지 않음
+    ; warning
+    @(87.63 mm, 142.24 mm): Symbol R3 [R]
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(100.00 mm, 226.27 mm): Label 'MASTER_USB5V'
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(109.84 mm, 140.38 mm): Horizontal Wire, length 14.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(109.84 mm, 151.81 mm): Horizontal Wire, length 14.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(109.84 mm, 151.81 mm): Symbol U1 Pin 1 [VDD, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(109.87 mm, 147.91 mm): Wire, length 0.095 mm
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(120.00 mm, 148.00 mm): Symbol U1 [DHT11]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(142.14 mm, 68.16 mm): Symbol A2 Pin 1 [SCK_JC1_K17, Input, Line]
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(165.00 mm, 58.00 mm): Symbol A2 [Basys3Slave]
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(170.00 mm, 225.00 mm): Symbol J4 [Power2]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.00 mm, 156.19 mm): Vertical Wire, length 5.19 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.00 mm, 156.19 mm): Symbol C2 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: 심볼 'C'가 라이브러리 'Device'의 복사본과 일치하지 않음
+    ; warning
+    @(180.00 mm, 160.00 mm): Symbol C2 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.00 mm, 163.81 mm): Vertical Wire, length 5.19 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.16 mm, 223.73 mm): Vertical Wire, length 18.27 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.16 mm, 226.27 mm): Horizontal Wire, length 19.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.16 mm, 226.27 mm): Symbol J4 Pin 1 [V+, Power output, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(187.86 mm, 47.84 mm): Horizontal Wire, length 11.14 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(187.86 mm, 50.38 mm): Horizontal Wire, length 11.14 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(187.86 mm, 52.92 mm): Horizontal Wire, length 11.14 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(187.86 mm, 55.46 mm): Horizontal Wire, length 11.14 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(187.86 mm, 58.00 mm): Horizontal Wire, length 11.14 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(187.86 mm, 60.54 mm): Horizontal Wire, length 11.14 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(187.86 mm, 63.08 mm): Horizontal Wire, length 11.14 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(187.86 mm, 65.62 mm): Horizontal Wire, length 11.14 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(187.86 mm, 68.16 mm): Horizontal Wire, length 11.14 mm
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(200.00 mm, 226.27 mm): Label 'SLAVE_USB5V'
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 146.73 mm): Vertical Wire, length 9.46 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 156.19 mm): Symbol R2 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: 심볼 'R'가 라이브러리 'Device'의 복사본과 일치하지 않음
+    ; warning
+    @(205.00 mm, 160.00 mm): Symbol R2 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 163.81 mm): Vertical Wire, length 5.19 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(216.19 mm, 146.73 mm): Horizontal Wire, length 11.19 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(216.19 mm, 146.73 mm): Symbol R1 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: 심볼 'R'가 라이브러리 'Device'의 복사본과 일치하지 않음
+    ; warning
+    @(220.00 mm, 146.73 mm): Symbol R1 [R]
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(245.00 mm, 52.00 mm): Symbol J6 [PMODJA]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(249.84 mm, 144.19 mm): Horizontal Wire, length 14.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(249.84 mm, 146.73 mm): Horizontal Wire, length 26.03 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(249.84 mm, 149.27 mm): Horizontal Wire, length 19.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(249.84 mm, 151.81 mm): Horizontal Wire, length 14.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(249.84 mm, 151.81 mm): Symbol U2 Pin 1 [VCC_5V, Power input, Line]
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(260.00 mm, 148.00 mm): Symbol U2 [HCSR04]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(260.24 mm, 48.19 mm): Horizontal Wire, length 29.76 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(260.24 mm, 50.73 mm): Horizontal Wire, length 29.76 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(260.24 mm, 53.27 mm): Horizontal Wire, length 29.76 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(260.24 mm, 55.81 mm): Horizontal Wire, length 29.76 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(260.24 mm, 58.35 mm): Horizontal Wire, length 29.76 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(260.24 mm, 58.35 mm): Symbol J6 Pin 1 [JA1_J1_DHT, Passive, Line]
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(270.00 mm, 225.00 mm): Symbol J5 [Power2]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(280.16 mm, 223.73 mm): Vertical Wire, length 18.27 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(280.16 mm, 226.27 mm): Horizontal Wire, length 19.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(280.16 mm, 226.27 mm): Symbol J5 Pin 1 [V+, Power output, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(317.22 mm, 45.00 mm): Horizontal Wire, length 17.22 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(317.22 mm, 45.00 mm): Symbol A4 Pin 1 [LED[15:0], Input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(317.22 mm, 70.00 mm): Horizontal Wire, length 17.22 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(317.22 mm, 70.00 mm): Symbol A5 Pin 1 [SEG[7:0]_AN[3:0], Input, Line]
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(335.00 mm, 45.00 mm): Symbol A4 [LEDBank16]
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(335.00 mm, 70.00 mm): Symbol A5 [FND4]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(364.84 mm, 142.46 mm): Horizontal Wire, length 39.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(364.84 mm, 145.00 mm): Horizontal Wire, length 39.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(364.84 mm, 147.54 mm): Horizontal Wire, length 39.84 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(364.84 mm, 147.54 mm): Symbol J2 Pin 1 [PC_RX, Input, Line]
+[lib_symbol_issues]: 현재 설정에 심볼 라이브러리 'Custom'가 포함되어 있지 않음
+    ; warning
+    @(375.00 mm, 145.00 mm): Symbol J2 [UART3]
+
+ ** ERC messages: 82  Errors 0  Warnings 82
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

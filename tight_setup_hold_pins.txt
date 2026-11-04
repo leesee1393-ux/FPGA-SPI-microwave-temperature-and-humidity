@@ -1,0 +1,8 @@
++==============+===============+================================================================+
+| Launch Clock | Capture Clock | Pin                                                            |
++==============+===============+================================================================+
+| sys_clk_pin  | sys_clk_pin   | u_uart_system/u_uart_controller/u_data_sender/tx_data_reg[3]/D |
+| sys_clk_pin  | sys_clk_pin   | u_uart_system/u_uart_controller/u_data_sender/tx_data_reg[0]/D |
+| sys_clk_pin  | sys_clk_pin   | u_uart_system/u_uart_controller/u_data_sender/tx_data_reg[2]/D |
+| sys_clk_pin  | sys_clk_pin   | u_uart_system/u_uart_controller/u_data_sender/tx_data_reg[1]/D |
++--------------+---------------+----------------------------------------------------------------+
